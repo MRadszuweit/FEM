@@ -1,0 +1,41 @@
+#!/bin/bash
+
+# ssh-agent
+#export SSH_AUTH_SOCK
+#export SSH_AGENT_PID
+
+MASCHINES="\
+erhard-01 \
+erhard-02 \
+erhard-03 \
+erhard-04 \
+erhard-05 \
+erhard-06 \
+erhard-07 \
+erhard-08 \
+erhard-09 \
+erhard-17 \
+erhard-18 \
+erhard-19 \
+erhard-20 \
+erhard-21 \
+erhard-22 \
+erhard-23 \
+erhard-24 \
+escher-01 \
+escher-02 \
+"
+
+touch temp
+DIR=$(pwd)
+SDIR="/Home/damage/radszuwe/C-Programme/FEM/Crack"
+ssh-add ~/.ssh/id_rsa
+
+for M in $MASCHINES; do 
+ssh "radszuwe@$M" << EOF
+bash "$SDIR"/helper $DIR
+EOF
+done 
+cat temp
+rm temp
+ssh-add -D

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd $1
+echo "$(hostname): $(top -n3 -b | grep Cpu | tail -1| cut -d"," -f1)" >> temp

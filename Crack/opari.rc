@@ -1,0 +1,12 @@
+<OPARIRC 1.0>
+0
+../FEM2D/geometry2D.c
+0 0 4
+../FEM2D/FEM.c
+0 0 4
+SuiteSparse_config.c
+0 0 4
+../FEM2D/FEM2D.c
+0 0 4
+crack.c
+0 0 4

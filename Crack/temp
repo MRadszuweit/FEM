@@ -1,0 +1,13 @@
+  PID TTY      STAT   TIME COMMAND
+10558 ?        RN   6840:59 crackx86_64 sim -load=Sep_eq_1 -out=Sep_eq_1a -timesteps=100000 -time=1000
+31437 ?        RN   5497:56 crackx86_64 sim solderSnPb.params -out=Sep7 -timesteps=10000 -time=10000 -cond=rect_sep.con -mesh=lsample.1 -dir=/scratch/radszuwe/Daten -dt_min=1e0 -alpha1=1e4 -alpha2=1e4 -kappa_c=5e-6
+36497 ?        RN   5395:42 crackx86_64 sim solderSnPb.params -out=Sep_nostrain3 -timesteps=5000 -time=1000 -cond=rect_shear_relax.con -mesh=Finesquare.1 -dir=/scratch/radszuwe/Daten -dt_min=1e0 -alpha1=1e4 -alpha2=1e4 -kappa_c=1e-6 -a_min=1e-5
+44627 ?        Ss     0:00 /usr/lib/systemd/systemd --user
+44628 ?        S      0:00 (sd-pam)
+46758 ?        S      0:00 sshd: radszuwe@pts/0
+46759 pts/0    Ss     0:00 -bash
+52312 pts/0    R+     0:00 ps x
+59054 ?        R    7058:24 crackx86_64 sim solderSnPb.params -out=Sep6 -timesteps=10000 -time=1000 -cond=rect_sep.con -mesh=lsample.1 -dir=/scratch/radszuwe/Daten -dt_min=1e0 -alpha1=1e4 -alpha2=1e4 -kappa_c=5e-6
+59345 ?        R    7024:53 crackx86_64 sim solderSnPb.params -out=Sep5 -timesteps=10000 -time=10000 -cond=rect_sep.con -mesh=finesquare.1 -dir=/scratch/radszuwe/Daten -dt_min=1e0 -alpha1=1e4 -alpha2=1e4 -kappa_c=5e-6
+59799 ?        R    7051:10 crackx86_64 sim solderSnPb.params -out=Sep4 -timesteps=10000 -time=1000 -cond=rect_shear_relax.con -mesh=finesquare.1 -dir=/scratch/radszuwe/Daten -dt_min=1e0 -alpha1=1e4 -alpha2=1e4 -kappa_c=5e-6
+60103 ?        R    7045:34 crackx86_64 sim solderSnPb.params -out=Sep0 -timesteps=10000 -time=1000 -cond=rect_shear_relax.con -mesh=lsample.1 -dir=/scratch/radszuwe/Daten -dt_min=1e0 -alpha1=1e4 -alpha2=1e4 -kappa_c=5e-6
