@@ -1,0 +1,404 @@
+# format=tagmanager
+AGGRESSIVEÌ65536Ö0
+AMG_PCGÌ65536Ö0
+AMG_SYSTEM_INFOÌ2048Ö0
+AMG_aggr_smoothing_iterationsÌ64ÎAMG_SYSTEM_INFOÖ0Ïint
+AMG_coarseningÌ64ÎAMG_SYSTEM_INFOÖ0Ïint
+AMG_coarsest_solverÌ1024Í(sparse_matrix* L,sparse_matrix* U,double* F,double* Sol,int size)ÎAMG_SYSTEM_INFOÖ0Ïvoid
+AMG_cycle_structureÌ64ÎAMG_SYSTEM_INFOÖ0Ïint
+AMG_default_iterationsÌ1024Í(int depth)Ö0Ïint *
+AMG_deg_of_freedomÌ64ÎAMG_SYSTEM_INFOÖ0Ïint
+AMG_free_dataÌ1024Í(amg_system_info* Data)Ö0Ïvoid
+AMG_infoÌ64ÎAMG_SYSTEM_INFOÖ0Ïint
+AMG_print_infoÌ1024Í(int s)Ö0Ïvoid
+AMG_prolongation_methodÌ64ÎAMG_SYSTEM_INFOÖ0Ïint
+AMG_set_SOR_relaxation_coeffÌ1024Í(double alpha)Ö0Ïvoid
+AMG_setupÌ1024Í( sparse_matrix* A, int AMG_deg_of_freedom, int depth, int AMG_smoothing_iterations, int AMG_aggr_smoothing_iterations, int AMG_coarsening, int AMG_cycle_structure, int AMG_prolongation_method, void (*AMG_coarsest_solver)(sparse_matrix* L,sparse_matrix* U,double* F,double* Sol,int size), int* (*Get_iter)(int depth))Ö0Ïamg_system_info *
+AMG_smoothing_iterationsÌ64ÎAMG_SYSTEM_INFOÖ0Ïint
+AMG_solveÌ1024Í(amg_system_info* System_data,double* F,double* Fine_Sol)Ö0Ïdouble
+AUTOMATICÌ65536Ö0
+AbsoluteÌ4Îanon_enum_3Ö0
+AssertÌ1024Í(int assertion, char* error)Ö0Ïvoid
+COARSEÌ65536Ö0
+CONV_CHECKÌ4096Ö0Ïanon_enum_3
+CheckEachIterÌ4Îanon_enum_2Ö0
+CheckOnRestartÌ4Îanon_enum_2Ö0
+ChildsÌ64Îtree_sparse_matrixÖ0Ïtree_sparse_matrix
+Coarse_AÌ64ÎAMG_SYSTEM_INFOÖ0Ïsparse_matrix
+Coarse_sizesÌ64ÎAMG_SYSTEM_INFOÖ0Ïint
+CoarseningÌ64ÎAMG_SYSTEM_INFOÖ0Ïint
+CompareÌ1024Í(const void* a, const void* b)Îrb_red_blk_treeÖ0Ïint
+DATAÌ65536Ö0
+DATALEVELÌ65536Ö0
+DATA_TYPEÌ65536Ö0
+DEBUG_ASSERTÌ65536Ö0
+DIRECTÌ65536Ö0
+DOWNÌ65536Ö0
+DebugÌ4Îanon_enum_0Ö0
+DestroyInfoÌ1024Í(void* a)Îrb_red_blk_treeÖ0Ïvoid
+DestroyKeyÌ1024Í(void* a)Îrb_red_blk_treeÖ0Ïvoid
+EPMACHÌ65536Ö0
+ERRORÌ65536Ö0
+ERRORLEVELÌ65536Ö0
+FILE_STUFF_HÌ65536Ö0
+FINEÌ65536Ö0
+FITERÌ65536Ö0
+FMISCÌ65536Ö0
+FRESÌ65536Ö0
+FULL_AMGÌ65536Ö0
+F_ProlongÌ1024Í(sparse_matrix* A,sparse_matrix* B,int* Label,int i, int** Indices,double** Values,int** Status,int** Strong,int** Positions)ÎAMG_SYSTEM_INFOÖ0Ïint
+FalseÌ4Îanon_enum_1Ö0
+FinalÌ4ÎITLIN_DATA::anon_enum_5Ö0
+Fine_sizesÌ64ÎAMG_SYSTEM_INFOÖ0Ïint
+Free_sparseÌ1024Í(sparse_matrix* A)Ö0Ïvoid
+GBITÌ4ÎITLIN_DATA::anon_enum_4Ö0
+GMRESÌ4ÎITLIN_DATA::anon_enum_4Ö0
+GMRES_NEWTONÌ65536Ö0
+Gauss_eleminationÌ1024Í(sparse_matrix* A,double* b,double* Solution,double tol)Ö0Ïvoid
+Get_iterÌ1024Í(int depth)ÎAMG_SYSTEM_INFOÖ0Ïint *
+ILU_residuumÌ1024Í(sparse_matrix* A,sparse_matrix* L,sparse_matrix* U,double* Sol,double* b)Ö0Ïdouble
+INC_E_MISC_Ì65536Ö0
+ISOLATEDÌ65536Ö0
+ITLIN_DATAÌ2048Ö0
+ITLIN_HÌ65536Ö0
+ITLIN_INFOÌ2048Ö0
+ITLIN_IOÌ2048Ö0
+ITLIN_OPTÌ2048Ö0
+IndicesÌ64ÎSPARSEÖ0Ïint
+Indices1Ì64ÎSPARSE3DÖ0Ïint
+Indices2Ì64ÎSPARSE3DÖ0Ïint
+InitialÌ4ÎITLIN_DATA::anon_enum_5Ö0
+IntermediateÌ4ÎITLIN_DATA::anon_enum_5Ö0
+Inverse_MapÌ64Îtree_sparse_matrixÖ0Ïint
+LÌ64ÎAMG_SYSTEM_INFOÖ0Ïsparse_matrix
+LARGE_SYSTEMÌ65536Ö0
+LEFTÌ65536Ö0
+LINEAR_ALGEBRA_HÌ65536Ö0
+LOGICALÌ4096Ö0Ïanon_enum_1
+LU_factorzationÌ1024Í(double** A,double** L,double** U,int size)Ö0Ïvoid
+LU_sparse_block_factorizationÌ1024Í(sparse_matrix* A,sparse_matrix* LB,sparse_matrix* UB,int* Map,int* Inv_Map)Ö0Ïvoid
+LU_sparse_block_solverÌ1024Í(sparse_matrix* L,sparse_matrix* U,int* Map,int* Inv_Map, double* X,double* B)Ö0Ïvoid
+L_triang_fast_invertÌ1024Í(sparse_matrix* L,int** Ind,double** Val,int size,int I,int max_band_width,double tol)Ö0Ïint
+L_triang_invertÌ1024Í(sparse_matrix* L,double* x)Ö0Ïvoid
+Lap_2D_DirichletÌ1024Í(double a,double b,int dom_size)Ö0Ïsparse_matrix *
+LeafÌ64Îtree_sparse_matrixÖ0Ïsparse_matrix
+LenÌ64ÎSPARSEÖ0Ïint
+LenÌ64ÎSPARSE3DÖ0Ïint
+Lower_CrossÌ64Îtree_sparse_matrixÖ0Ïsparse_matrix
+Lower_triangular_invertÌ1024Í(double** L,double* X,int size)Ö0Ïdouble *
+MATVECÌ4096Ö0Ïtypedef void
+MAXÌ131072Í(A,B)Ö0
+MINÌ131072Í(A,B)Ö0
+MONITORÌ65536Ö0
+MONITORLEVELÌ65536Ö0
+MULTI_HÌ65536Ö0
+MapÌ64Îtree_sparse_matrixÖ0Ïint
+MinimumÌ4Îanon_enum_0Ö0
+Multi_LU_sparse_block_factorizationÌ1024Í(sparse_matrix* A,sparse_matrix* LB, sparse_matrix* UB,int* Map,int* Inv_Map,int crit_size)Ö0Ïvoid
+NOÌ65536Ö0
+NONEÌ65536Ö0
+Newton_GMRES_optionsÌ1024Í(int bases_imax,int maxiter,double tol)Ö0Ïvoid
+Newton_first_guessÌ1024Í(double* Res,int n)Ö0Ïvoid
+Newton_first_guess_optionsÌ1024Í(int guess_num,int size,double* Min,double* Max)Ö0Ïvoid
+Newton_get_all_rootsÌ1024Í()Ö0Ïdouble * *
+Newton_get_full_patternÌ1024Í(int size)Ö0Ïsparse_matrix *
+Newton_set_functionÌ1024Í(double (*F)(double* X,int i,int size))Ö0Ïvoid
+Newton_set_inhomoÌ1024Í(double* B,int n)Ö0Ïvoid
+Newton_set_rangeÌ1024Í(int size,double* Min,double* Max)Ö0Ïvoid
+Newton_solverÌ1024Í(sparse_matrix* Pattern,double* X,double maxiter,double eps,int mode,double r0)Ö0Ïint
+Newton_solver_mult_RootÌ1024Í(sparse_matrix* Pattern,double maxiter,double eps,int mode)Ö0Ïint
+NoneÌ4Îanon_enum_0Ö0
+NullFunctionÌ1024Í(void*)Ö0Ïvoid
+PCGÌ4ÎITLIN_DATA::anon_enum_4Ö0
+PCGS_HÌ65536Ö0
+PCG_AMG_mat_multÌ1024Í(int n,double* x,double* y)Ö0Ïvoid
+PCG_AMG_preconÌ1024Í(int n,double* R,double* Z)Ö0Ïint
+PCG_get_mat_multÌ1024Í()Ö0Ïvoid *
+PCG_get_preconÌ1024Í()Ö0Ïvoid *
+PCG_get_precon_iterÌ1024Í()Ö0Ïint
+PCG_resetÌ1024Í()Ö0Ïvoid
+PCG_set_AMG_solverÌ1024Í(double (*Prec_solver)( sparse_matrix** Coarse_A, sparse_matrix** Prolongation, sparse_matrix** Restriction, sparse_matrix** L, sparse_matrix** U, double** Coarsest_L, double** Coarsest_U, double* Sol, double* Fine_F, int** Coarsening, int* Fine_sizes, int* Coarse_sizes, int* Iterations, int max_depth, int depth))Ö0Ïvoid
+PCG_set_AMG_systemÌ1024Í(sparse_matrix* A, sparse_matrix** L, sparse_matrix** U, sparse_matrix** Restriction, sparse_matrix** Prolongation, sparse_matrix** Coarse_A, double** C_L, double** C_U, int** Coarsening, int* Coarse_sizes, int* Fine_sizes, int depth)Ö0Ïvoid
+PCG_set_mat_multÌ1024Í(void (*Mat_mult)(int n,double* x,double* y))Ö0Ïvoid
+PCG_set_preconÌ1024Í(int (*Precon)(int n,double* R,double* Z),int max_precon)Ö0Ïvoid
+PRECONÌ4096Ö0Ïtypedef void
+PREMODEÌ65536Ö0
+PRINT_LEVELÌ4096Ö0Ïanon_enum_0
+ParentÌ64Îtree_sparse_matrixÖ0Ïtree_sparse_matrix
+PrintInfoÌ1024Í(void* a)Îrb_red_blk_treeÖ0Ïvoid
+PrintKeyÌ1024Í(const void* a)Îrb_red_blk_treeÖ0Ïvoid
+ProlongationÌ64ÎAMG_SYSTEM_INFOÖ0Ïsparse_matrix
+RBDeleteÌ1024Í(rb_red_blk_tree* , rb_red_blk_node* )Ö0Ïvoid
+RBEnumerateÌ1024Í(rb_red_blk_tree* tree,void* low, void* high)Ö0Ïstk_stack *
+RBExactQueryÌ1024Í(rb_red_blk_tree*, void*)Ö0Ïrb_red_blk_node *
+RBLargestÌ1024Í(rb_red_blk_tree* tree)Ö0Ïrb_red_blk_node *
+RBTreeCreateÌ1024Í(int (*CompFunc)(const void*, const void*), void (*DestFunc)(void*), void (*InfoDestFunc)(void*), void (*PrintFunc)(const void*), void (*PrintInfo)(void*))Ö0Ïrb_red_blk_tree *
+RBTreeDestroyÌ1024Í(rb_red_blk_tree*)Ö0Ïvoid
+RBTreeInsertÌ1024Í(rb_red_blk_tree*, void* key, void* info)Ö0Ïrb_red_blk_node *
+RBTreePrintÌ1024Í(rb_red_blk_tree*)Ö0Ïvoid
+RB_TREE_HÌ65536Ö0
+RCODEÌ65536Ö0
+RIGHTÌ65536Ö0
+RelativeÌ4Îanon_enum_3Ö0
+RestrictionÌ64ÎAMG_SYSTEM_INFOÖ0Ïsparse_matrix
+SIGNÌ131072Í(A)Ö0
+SMALLÌ65536Ö0
+SMALL_SYSTEMÌ65536Ö0
+SORÌ1024Í(sparse_matrix* A,double* F,double* Sol,double alpha,int iter)Ö0Ïvoid
+SOR_residuumÌ1024Í(sparse_matrix* A,double* Sol,double* b,int alpha)Ö0Ïdouble
+SPARSEÌ2048Ö0
+SPARSE3DÌ2048Ö0
+STANDARDÌ65536Ö0
+STAND_ALONEÌ65536Ö0
+SafeMallocÌ1024Í(size_t size)Ö0Ïvoid *
+SignsÌ64ÎAMG_SYSTEM_INFOÖ0Ïsparse_matrix
+SolutionÌ4ÎITLIN_DATA::anon_enum_5Ö0
+StackCreateÌ1024Í()Ö0Ïstk_stack *
+StackJoinÌ1024Í(stk_stack * stack1, stk_stack * stack2)Ö0Ïstk_stack *
+StackNotEmptyÌ1024Í(stk_stack *)Ö0Ïint
+StackPopÌ1024Í(stk_stack * theStack)Ö0Ïvoid *
+StackPushÌ1024Í(stk_stack * theStack, DATA_TYPE newInfoPointer)Ö0Ïvoid
+TERM_CHECKÌ4096Ö0Ïanon_enum_2
+TreePredecessorÌ1024Í(rb_red_blk_tree*,rb_red_blk_node*)Ö0Ïrb_red_blk_node *
+TreeSuccessorÌ1024Í(rb_red_blk_tree*,rb_red_blk_node*)Ö0Ïrb_red_blk_node *
+TrueÌ4Îanon_enum_1Ö0
+UÌ64ÎAMG_SYSTEM_INFOÖ0Ïsparse_matrix
+UNDECIDEDÌ65536Ö0
+UPÌ65536Ö0
+U_triang_fast_invertÌ1024Í(sparse_matrix* U,int**Ind,double** Val,int size,int I,int max_band_width,double tol)Ö0Ïint
+U_triang_invertÌ1024Í(sparse_matrix* U,double* x)Ö0Ïvoid
+Upper_CrossÌ64Îtree_sparse_matrixÖ0Ïsparse_matrix
+Upper_triangular_invertÌ1024Í(double** U,double* X,int size)Ö0Ïdouble *
+ValuesÌ64ÎSPARSEÖ0Ïdouble
+ValuesÌ64ÎSPARSE3DÖ0Ïdouble
+VerboseÌ4Îanon_enum_0Ö0
+WEAKÌ65536Ö0
+WITHOUT_IOSOLATEDÌ65536Ö0
+WITH_ISOLATEDÌ65536Ö0
+YESÌ65536Ö0
+amg_system_infoÌ4096Ö0ÏAMG_SYSTEM_INFO
+anon_enum_0Ì2Ö0
+anon_enum_1Ì2Ö0
+anon_enum_2Ì2Ö0
+anon_enum_3Ì2Ö0
+anon_enum_4Ì2ÎITLIN_DATAÖ0
+anon_enum_5Ì2ÎITLIN_DATAÖ0
+append_dataÌ1024Í(FILE* file,double* data,int size,int var_num,double time)Ö0Ïvoid
+append_vectorÌ1024Í(double** V1,int n1,double* V2,int n2)Ö0Ïvoid
+change_rowÌ1024Í(sparse_matrix* A,double* F,int i1,int i2)Ö0Ïvoid
+change_to_spatial_orderingÌ1024Í(sparse_matrix* A,sparse_matrix* B,double* F,double* G,int block_size)Ö0Ïvoid
+change_var_rowsÌ1024Í(sparse_matrix* A,double* F,int var1,int var2,int block_size)Ö0Ïvoid
+child_numberÌ64Îtree_sparse_matrixÖ0Ïint
+cloneÌ1024Í(sparse_matrix* A)Ö0Ïsparse_matrix *
+clone_listÌ1024Í(int* x,int n)Ö0Ïint *
+clone_vectorÌ1024Í(double* x,int n)Ö0Ïdouble *
+codeidÌ64ÎITLIN_DATAÖ0Ïanon_enum_4
+complete_LU_factorizationÌ1024Í(sparse_matrix* A,sparse_matrix* L,sparse_matrix* U)Ö0Ïvoid
+convcheckÌ64ÎITLIN_OPTÖ0ÏCONV_CHECK
+convert_array_to_sparseÌ1024Í(double** M_A,sparse_matrix* A,int col_size,int row_size)Ö0Ïvoid
+convert_sparse_to_arrayÌ1024Í(sparse_matrix* A,int col_size)Ö0Ïdouble * *
+convert_to_UMFPACK_ValuesÌ1024Í(sparse_matrix* A,int N)Ö0Ïdouble *
+convert_to_UMFPACK_indicesÌ1024Í(sparse_matrix* A,int N)Ö0Ïint *
+convert_to_UMFPACK_sizesÌ1024Í(sparse_matrix* A)Ö0Ïint *
+copy_contentÌ1024Í(sparse_matrix* A,sparse_matrix* B)Ö0Ïvoid
+copy_vector_contentÌ1024Í(double* x,double* y,int x_pos,int y_pos,int size)Ö0Ïvoid
+copy_vector_toÌ1024Í(double* x,double* y,int n)Ö0Ïvoid
+create_2D_arrayÌ1024Í(int n,int m)Ö0Ïdouble * *
+datafileÌ64ÎITLIN_OPTÖ0ÏFILE
+datalevelÌ64ÎITLIN_OPTÖ0ÏPRINT_LEVEL
+datfileÌ64ÎITLIN_IOÖ0ÏFILE
+datlevelÌ64ÎITLIN_IOÖ0ÏPRINT_LEVEL
+daxpy_Ì1024Í(int *n, double *alpha, double *x, int *incx, double *y, int *incy)Ö0Ïvoid
+degree_of_occupationÌ1024Í(sparse_matrix* A)Ö0Ïdouble
+delete_zerosÌ1024Í(sparse_matrix* A)Ö0Ïvoid
+depthÌ64ÎAMG_SYSTEM_INFOÖ0Ïint
+diag_zeroÌ1024Í(sparse_matrix* A)Ö0Ïint
+diagonal_preconditionerÌ1024Í(sparse_matrix* A,sparse_matrix* L,sparse_matrix* U)Ö0Ïvoid
+double_sortÌ1024Í(int* List,double* Values,int size)Ö0Ïvoid
+errfileÌ64ÎITLIN_IOÖ0ÏFILE
+errlevelÌ64ÎITLIN_IOÖ0ÏPRINT_LEVEL
+errorfileÌ64ÎITLIN_OPTÖ0ÏFILE
+errorlevelÌ64ÎITLIN_OPTÖ0ÏPRINT_LEVEL
+euklid_normÌ1024Í(double* x1,int n)Ö0Ïdouble
+find_elementÌ1024Í(sparse_matrix* A,int j)Ö0Ïint
+free_2D_arrayÌ1024Í(double** A,int n)Ö0Ïdouble * *
+free_sparseÌ131072Í(A)Ö0
+free_sparse3DÌ131072Í(A)Ö0
+gauss_seidelÌ1024Í(int (*Inv_NB_matvec)(int n,double* x,double* b), void (*NB_matvec)(int n,double* y,double* z), double* Solution,double* b,int size,int iterations,double tol)Ö0Ïint
+generate_listÌ1024Í(int* var_indices,int var_len,int grid_size,int whole_size)Ö0Ïint *
+generate_vectorÌ1024Í(int size,double val)Ö0Ïdouble *
+get_1D_LaplaceÌ1024Í(double* F,int n)Ö0Ïsparse_matrix *
+get_ave_band_widthÌ1024Í(sparse_matrix* A)Ö0Ïint
+get_dependence_patternÌ1024Í(sparse_matrix* A)Ö0Ïsparse_matrix *
+get_dependence_pattern3DÌ1024Í(sparse_matrix3D* A)Ö0Ïsparse_matrix *
+get_diagÌ1024Í(sparse_matrix* A,int i)Ö0Ïdouble
+get_diag_dominanceÌ1024Í(sparse_matrix* A)Ö0Ïdouble
+get_fast_ILU_preconditioned_matrixÌ1024Í(sparse_matrix* A,sparse_matrix* L,sparse_matrix* U,double tol)Ö0Ïsparse_matrix *
+get_inverseÌ1024Í(double** Q,int n)Ö0Ïdouble * *
+get_matrix_elementÌ1024Í(sparse_matrix* A,int i,int j)Ö0Ïdouble
+get_max_band_widthÌ1024Í(sparse_matrix* A)Ö0Ïint
+get_meanÌ1024Í(double* List,int size)Ö0Ïdouble
+get_nonzero_indicesÌ1024Í(double* Vector,int size,int* new_size)Ö0Ïint *
+get_partial_meanÌ1024Í(double* List,int start,int end)Ö0Ïdouble
+get_pcg_residuumÌ1024Í()Ö0Ïdouble
+get_positionÌ1024Í(int* list,int size,int val,int* Flag)Ö0Ïint
+get_resized_matrixÌ1024Í(sparse_matrix* A,int mesh_size,int new_size,int equ_index,int var_index)Ö0Ïsparse_matrix *
+get_resized_vectorÌ1024Í(double* Vector,int old_size,int new_size)Ö0Ïdouble *
+get_sqr_meanÌ1024Í(double* List,int size)Ö0Ïdouble
+get_sub_sparse_matrixÌ1024Í(sparse_matrix* A,int start,int end,int* Map,int* Inv_Map)Ö0Ïsparse_matrix *
+get_test_matrixÌ1024Í()Ö0Ïsparse_matrix *
+get_transposeÌ1024Í(sparse_matrix* A)Ö0Ïsparse_matrix *
+get_worst_diagonalÌ1024Í(sparse_matrix* A)Ö0Ïdouble
+i_maxÌ64ÎITLIN_OPTÖ0Ïint
+in_listÌ1024Í(int* List,int size,int n)Ö0Ïint
+incomplete_LU_factorizationÌ1024Í(sparse_matrix* A,sparse_matrix* L,sparse_matrix* U)Ö0Ïvoid
+infoÌ64Îrb_red_blk_nodeÖ0Ïvoid
+infoÌ64Îstk_stack_nodeÖ0ÏDATA_TYPE
+insert_element_atÌ1024Í(sparse_matrix* A,double a,int i,int j,int pos)Ö0Ïvoid
+insert_sparseÌ1024Í(sparse_matrix* A,double a,int i,int j)Ö0Ïint
+insert_vectorÌ1024Í(double* Vector,double* vector,int start,int size)Ö0Ïvoid
+is_L_triang_matrixÌ1024Í(sparse_matrix* A)Ö0Ïint
+is_U_triang_matrixÌ1024Í(sparse_matrix* A)Ö0Ïint
+is_symmetricÌ1024Í(sparse_matrix* A,int i,int j)Ö0Ïint
+iterÌ64ÎITLIN_INFOÖ0Ïint
+iterfileÌ64ÎITLIN_IOÖ0ÏFILE
+iterfileÌ64ÎITLIN_OPTÖ0ÏFILE
+itlin_dataoutÌ1024Í(int k, int n, double *x, struct ITLIN_DATA *data)Ö0Ïvoid
+itlin_nopreconÌ1024Í(int n, double *x, double *z)Ö0Ïvoid
+itlin_parcheck_and_printÌ1024Í(int n, MATVEC *matvec, struct ITLIN_OPT *opt, int itlin_code)Ö0Ïint
+join_vectorsÌ1024Í(double* V1,int n1,double* V2,int n2)Ö0Ïdouble *
+keyÌ64Îrb_red_blk_nodeÖ0Ïvoid
+leftÌ64Îrb_red_blk_nodeÖ0Ïrb_red_blk_node
+linear_mapÌ1024Í(double* x,double fac,sparse_matrix* A,double* y)Ö0Ïvoid
+make_nonzero_diagÌ1024Í(sparse_matrix* A,double* F)Ö0Ïvoid
+make_positive_diagÌ1024Í(sparse_matrix* A)Ö0Ïsparse_matrix *
+map_backÌ1024Í(double* Solution,double* Restricted,int n_sol,int* index_map)Ö0Ïvoid
+map_indicesÌ1024Í(sparse_matrix* A,sparse_matrix* B,double* F,double* G,int* Map)Ö0Ïvoid
+map_sizeÌ64Îtree_sparse_matrixÖ0Ïint
+matrix_normÌ1024Í(sparse_matrix* A)Ö0Ïdouble
+matrix_residuumÌ1024Í(sparse_matrix* A,double* Sol,double* b)Ö0Ïdouble
+maxiterÌ64ÎITLIN_OPTÖ0Ïint
+miscfileÌ64ÎITLIN_IOÖ0ÏFILE
+miscfileÌ64ÎITLIN_OPTÖ0ÏFILE
+modeÌ64ÎITLIN_DATAÖ0Ïanon_enum_5
+monfileÌ64ÎITLIN_IOÖ0ÏFILE
+monitorfileÌ64ÎITLIN_OPTÖ0ÏFILE
+monitorlevelÌ64ÎITLIN_OPTÖ0ÏPRINT_LEVEL
+monlevelÌ64ÎITLIN_IOÖ0ÏPRINT_LEVEL
+nextÌ64Îstk_stack_nodeÖ0Ïstk_stack_node
+nilÌ64Îrb_red_blk_treeÖ0Ïrb_red_blk_node
+nomatvecÌ64ÎITLIN_INFOÖ0Ïint
+nopreclÌ64ÎITLIN_INFOÖ0Ïint
+nopreconÌ64ÎITLIN_INFOÖ0Ïint
+noprecrÌ64ÎITLIN_INFOÖ0Ïint
+normalize_row_sumÌ1024Í(sparse_matrix* A)Ö0Ïvoid
+normdxÌ64ÎITLIN_DATAÖ0Ïdouble
+normdxÌ64ÎITLIN_INFOÖ0Ïdouble
+open_fileÌ1024Í(char* dir,char* name,char* mode)Ö0ÏFILE *
+parentÌ64Îrb_red_blk_nodeÖ0Ïrb_red_blk_node
+partial_vector_shiftÌ1024Í(double* x,int start,int end,double a)Ö0Ïvoid
+pcgÌ1024Í(double* X,double* B,int n,double tol,int max_iter)Ö0Ïint
+pivotÌ1024Í(sparse_matrix* A,double* B,int* Map)Ö0Ïvoid
+precisionÌ64ÎITLIN_INFOÖ0Ïdouble
+print_2D_arrayÌ1024Í(double** A,int n)Ö0Ïvoid
+print_2D_listÌ1024Í(int** A,int n)Ö0Ïvoid
+print_listÌ1024Í(int* V,int n)Ö0Ïvoid
+print_sparseÌ1024Í(sparse_matrix* A)Ö0Ïvoid
+print_sparse_tableÌ1024Í(sparse_matrix* A)Ö0Ïvoid
+print_sqr_arrayÌ1024Í(double** A,int n,int m)Ö0Ïvoid
+print_tableÌ1024Í(double* V,char* name,int n)Ö0Ïvoid
+print_vectorÌ1024Í(double* V,int n)Ö0Ïvoid
+rb_red_blk_nodeÌ2048Ö0
+rb_red_blk_nodeÌ4096Ö0
+rb_red_blk_treeÌ2048Ö0
+rb_red_blk_treeÌ4096Ö0
+rcodeÌ64ÎITLIN_INFOÖ0Ïint
+readlineÌ1024Í(FILE* file,char* buffer)Ö0Ïint
+redÌ64Îrb_red_blk_nodeÖ0Ïint
+remove_elementÌ1024Í(sparse_matrix* A,int i,int j)Ö0Ïvoid
+remove_element_atÌ1024Í(sparse_matrix* A,int i,int pos)Ö0Ïvoid
+resÌ64ÎITLIN_DATAÖ0Ïdouble
+rescaleÌ64ÎITLIN_OPTÖ0ÏLOGICAL
+reset_rowÌ1024Í(sparse_matrix* A,int i)Ö0Ïvoid
+resfileÌ64ÎITLIN_IOÖ0ÏFILE
+resfileÌ64ÎITLIN_OPTÖ0ÏFILE
+residuumÌ1024Í(void (*Matvec)(int n,double* y,double* z),double* Sol,double* b,int n)Ö0Ïdouble
+residuumÌ64ÎITLIN_DATAÖ0Ïdouble
+residuumÌ64ÎITLIN_INFOÖ0Ïdouble
+resize_matrixÌ1024Í(sparse_matrix* A,int new_size)Ö0Ïvoid
+resize_vectorÌ131072Í(v,old_size,new_size)Ö0
+restrict_matrixÌ1024Í(sparse_matrix* A,double* b,double** b_sub,int** index_map, double* Solution,double* Prev_solution,double tol)Ö0Ïsparse_matrix *
+restrict_matrix_colsÌ1024Í(sparse_matrix* A,double* Sol,int* index_map)Ö0Ïdouble *
+restrict_matrix_rowsÌ1024Í(sparse_matrix* A,int* List,int list_size,int* index_map)Ö0Ïsparse_matrix *
+restrict_systemÌ1024Í(sparse_matrix* A,double* F,double* Sol,int start,int end)Ö0Ïdouble *
+restrict_vectorÌ1024Í(double* Vector,int* index_map,int n_sol,int n_res)Ö0Ïdouble *
+restrict_vector_byÌ1024Í(int i_min,int i_max,double* Vector)Ö0Ïdouble *
+rhoÌ64ÎITLIN_OPTÖ0Ïdouble
+rightÌ64Îrb_red_blk_nodeÖ0Ïrb_red_blk_node
+rootÌ64Îrb_red_blk_treeÖ0Ïrb_red_blk_node
+row_times_rowÌ1024Í(sparse_matrix* A,sparse_matrix* B,int i_a,int i_b,int j_min,int j_max)Ö0Ïdouble
+scalarÌ1024Í(double* x1,double* x2,int n)Ö0Ïdouble
+scalar_multÌ1024Í(double a,double* x,int n)Ö0Ïvoid
+scalar_sparse_multÌ1024Í(double a,sparse_matrix* A)Ö0Ïvoid
+scaleÌ64ÎITLIN_OPTÖ0Ïdouble
+set_connection_thresholdsÌ1024Í(double negative,double positive)Ö0Ïvoid
+set_sparseÌ1024Í(sparse_matrix* A,double a,int i,int j)Ö0Ïvoid
+set_thread_numÌ1024Í(int n)Ö0Ïvoid
+set_zeroÌ1024Í(double* Vector,int start,int end)Ö0Ïvoid
+simple_pivotÌ1024Í(sparse_matrix* A,double* B,int* Map)Ö0Ïvoid
+sizeÌ64ÎSPARSEÖ0Ïint
+sizeÌ64ÎSPARSE3DÖ0Ïint
+sparse_LU_factorizationÌ1024Í(sparse_matrix* A,sparse_matrix* L,sparse_matrix* U)Ö0Ïvoid
+sparse_addÌ1024Í(sparse_matrix* A,sparse_matrix* B,double factor)Ö0Ïvoid
+sparse_approximateÌ1024Í(sparse_matrix* A,double tol)Ö0Ïvoid
+sparse_bilinearÌ1024Í(double* y,sparse_matrix* A,double* x)Ö0Ïdouble
+sparse_diagonalÌ1024Í(double* d,int n)Ö0Ïsparse_matrix *
+sparse_get_optimized_index_mapÌ1024Í(sparse_matrix* A,int* Map,int* Inv_Map)Ö0Ïvoid
+sparse_identityÌ1024Í(int length)Ö0Ïsparse_matrix *
+sparse_in_sparseÌ1024Í(sparse_matrix* A,sparse_matrix* B,int i_o,int j_o)Ö0Ïvoid
+sparse_is_isolatedÌ1024Í(sparse_matrix* A,int i)Ö0Ïint
+sparse_matrixÌ4096Ö0ÏSPARSE
+sparse_matrix3DÌ4096Ö0ÏSPARSE3D
+sparse_multÌ1024Í(sparse_matrix* A,double* x)Ö0Ïdouble *
+sparse_multiplicationÌ1024Í(sparse_matrix* A,double* x)Ö0Ïvoid
+sparse_partial_identityÌ1024Í(int length,int start,int end)Ö0Ïsparse_matrix *
+sparse_productÌ1024Í(sparse_matrix* A,sparse_matrix* B)Ö0Ïsparse_matrix *
+sparse_row_permutationÌ1024Í(sparse_matrix* A,int* Map)Ö0Ïvoid
+sparse_traceÌ1024Í(sparse_matrix* A)Ö0Ïdouble
+sparse_zeroÌ1024Í(int length)Ö0Ïsparse_matrix *
+sparse_zero3DÌ1024Í(int n)Ö0Ïsparse_matrix3D *
+splitÌ1024Í(char* string,char a,int* n)Ö0Ïchar * *
+square_matrix_cleanÌ1024Í(sparse_matrix* A)Ö0Ïint
+stk_stackÌ2048Ö0
+stk_stackÌ4096Ö0
+stk_stack_nodeÌ2048Ö0
+stk_stack_nodeÌ4096Ö0
+subcodeÌ64ÎITLIN_INFOÖ0Ïint
+tÌ64ÎITLIN_DATAÖ0Ïdouble
+tailÌ64Îstk_stackÖ0Ïstk_stack_node
+tauÌ64ÎITLIN_DATAÖ0Ïdouble
+termcheckÌ64ÎITLIN_OPTÖ0ÏTERM_CHECK
+test_ILUÌ1024Í(double** A,double** L,double** U,int n)Ö0Ïvoid
+test_LUÌ1024Í(double** A,double** L,double** U,int size)Ö0Ïvoid
+test_sparse_LUÌ1024Í(sparse_matrix* A,sparse_matrix* L,sparse_matrix* U)Ö0Ïdouble
+test_sparse_matrixÌ1024Í(sparse_matrix* A)Ö0Ïint
+tolÌ64ÎITLIN_OPTÖ0Ïdouble
+topÌ64Îstk_stackÖ0Ïstk_stack_node
+tree_sparse_matrixÌ2048Ö0
+tree_sparse_matrixÌ4096Ö0
+vec_distÌ1024Í(double* x1,double* x2,int n)Ö0Ïdouble
+vector_addÌ1024Í(double* x,double* y,double factor,int n)Ö0Ïvoid
+vector_normalizeÌ1024Í(double* x,int n)Ö0Ïvoid
+vector_permutationÌ1024Í(double* F,int* Map,int n)Ö0Ïvoid
+vector_shiftÌ1024Í(double* x,int n,double a)Ö0Ïvoid
+zero_int_listÌ1024Í(int n)Ö0Ïint *
+zero_matrixÌ1024Í(int n,int m)Ö0Ïdouble * *
+zero_vectorÌ1024Í(int n)Ö0Ïdouble *
+zibnum_descaleÌ1024Í(int n, double *v1, double *v2, double *scale)Ö0Ïvoid
+zibnum_fwallocÌ1024Í(int size, double **ptr, char vname[])Ö0Ïint
+zibnum_iwallocÌ1024Í(int size, int **ptr, char vname[])Ö0Ïint
+zibnum_norm2Ì1024Í(int n, double *v)Ö0Ïdouble
+zibnum_pfwallocÌ1024Í(int size, double ***ptr, char vname[])Ö0Ïint
+zibnum_scaleÌ1024Í(int n, double *v1, double *v2, double *scale)Ö0Ïvoid
+zibnum_scaled_norm2Ì1024Í(int n, double *v, double *scale)Ö0Ïdouble
+zibnum_scaled_sprodÌ1024Í(int n, double *v1, double *v2, double *scale)Ö0Ïdouble
