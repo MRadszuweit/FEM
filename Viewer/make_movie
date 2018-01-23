@@ -1,0 +1,9 @@
+#!/bin/sh
+#kwrite /home/radszuweit/C-Programme/PSLG/params_0
+BASE=/Home/damage/radszuwe/Daten
+FORMAT=png
+OUT=mpg
+FRAMES=10
+echo "mencoder -ovc lavc -mf fps=$FRAMES:type=$FORMAT mf://$BASE/$1*.$FORMAT -o $BASE/$2.$OUT > konsole"
+mencoder -ovc lavc -mf fps=$FRAMES:type=$FORMAT mf://$BASE/$1*.$FORMAT -o $BASE/$2.$OUT > mencoder_log
+

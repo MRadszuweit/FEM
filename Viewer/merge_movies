@@ -1,0 +1,40 @@
+#!/bin/sh
+cd $1
+mkdir Temp
+cd temp
+FILES1=$(find -maxdepth 1 -name "img_*")
+MAX=0
+for FILE in $FILES1
+do    
+  NUMBER=$(echo $FILE | grep -o -E '[0-9]+')
+  NUMBER=`echo $NUMBER|sed 's/^0*//'`
+  if [ $NUMBER -gt $MAX ]
+  then
+    MAX=$NUMBER
+  fi
+  LEN=${#NUMBER}
+  NEWNAME=$NUMBER
+  for  (( I=$LEN;I<$3;I++ ))
+  do
+    NEWNAME="0$NEWNAME"
+  done
+  cp $FILE "../Temp/img_$NEWNAME.png"
+done
+
+let "MAX = $MAX + 1"
+cd ../../$2/temp
+FILES2=$(find -maxdepth 1 -name "img_*")
+for FILE in $FILES2
+do    
+  NUMBER=$(echo $FILE | grep -o -E '[0-9]+')
+  NUMBER=`echo $NUMBER|sed 's/^0*//'`
+  let "NUMBER = $NUMBER + $MAX"
+  LEN=${#NUMBER}
+  NEWNAME=$NUMBER
+  for  (( I=$LEN;I<$3;I++ ))
+  do
+    NEWNAME="0$NEWNAME"
+  done
+  cp $FILE "../../$1/Temp/img_$NEWNAME.png"
+done
+
